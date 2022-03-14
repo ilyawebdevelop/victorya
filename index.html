@@ -3,8 +3,8 @@
  <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220314075649">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="stylesheet" href="css/style.min.css?_v=20220314174238">
 	<title>Главная</title>
 </head>
 
@@ -52,20 +52,24 @@
 	<div class="wrapper">
 		<main class="main">
 			<section class="intro" id="intro">
-  <div class="intro__wrapper">
-    <div class="intro__left" style="background: url('img/intro/intro-img1.png') no-repeat top center / cover;">    
-      <h2 class="intro__title">
-        свадебное
-      </h2>  
-    </div>
-    <div class="intro__right" style="background: url('img/intro/intro-img2.png') no-repeat top center / cover;">      
-      <h2 class="intro__title">
-        вечернее
-      </h2>
-    </div>
+  <div class="intro__wrapper swiper" id="intro__wrapper">
+    <div class="swiper-wrapper">
+      <div class="intro__left swiper-slide" style="background: url('img/intro/intro-img1.png') no-repeat top center / cover;">    
+        <h2 class="intro__title">
+          свадебное
+        </h2>  
+        <div class="bottom_gradient"></div>
+      </div>
+      <div class="intro__right swiper-slide" style="background: url('img/intro/intro-img2.png') no-repeat top center / cover;">      
+        <h2 class="intro__title">
+          вечернее
+        </h2>
+        <div class="bottom_gradient"></div>
+      </div>
+    </div>  
     <div class="intro__btn btn_collection">посмотреть коллекции</div>
     <div class="top_gradient"></div>
-    <div class="bottom_gradient"></div>
+    
   </div>
 </section>
 			<section class="wedding-dress" id="wedding-dress">
@@ -709,7 +713,7 @@
 </footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20220314075649"></script>
+	<script src="js/app.min.js?_v=20220314174238"></script>
 </body>
 
 </html>

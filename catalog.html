@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="stylesheet" href="css/style.min.css?_v=20220314174238">
+	<title>Каталог</title>
+</head>
+
+<body>
+	<!-- Header -->
+<header class="header header-all" id="header">
+  <div class="container-1800">
+    <div class="header__top">
+      <div class="header__contacts">
+        <a href="#" class="header__place">Москва, Волоколамское шоссе, д.2</a>
+        <a href="tel:+74957784130" class="header__phone">+7 (495) 778-41-30</a>
+      </div>
+      <a href="#" class="header__logo">
+        <img src="img/header-all/logo.svg" alt="logo">
+      </a>
+      <div class="header__order">
+        <a href="#" class="header__order-cart"></a>
+        <a href="#" class="header__order-modal btn">ЗАПИСАТЬСЯ НА ПРИМЕРКУ</a>
+      </div>
+    </div>
+    <div class="header__menu">
+      <ul class="header__menu-list">
+        <li class="header__menu-item">
+          <a href="#">КОНЦЕПЦИЯ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#">НАШИ НЕВЕСТЫ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#">КОЛЛЕКЦИИ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#">КОНТАКТЫ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#">ON-LINE SHOP</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#">SALE</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+	<div class="wrapper">
+		<main class="main">
+			<!-- Breadcrumps -->
+<section class="breadcrumps" id="breadcrumps">
+  <div class="container">
+    <div class="breadcrumps__wrapper">
+      <a href="#">Главная</a>
+      <a href="#">On-line shop</a>
+    </div>
+  </div>
+</section>
+			<!-- Catalog -->
+<section class="catalog" id="catalog">
+  <div class="catalog__sort">
+    <div class="container-1920">
+      <div class="catalog__sort-wrapper">
+        <div class="catalog__sort-left">
+          <a href="#" class="catalog__sort-filter-btn">фильтр</a>
+        </div>
+        <div class="catalog__sort-right">
+          <a href="#" class="">Сортировать</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="catalog__content">
+    <div class="container-1800">
+      <div class="catalog__content-wrapper">
+        <div class="sidebar">
+  <div class="sidebar__cost">
+    <div class="sidebar__cost-wrapper">
+      <div class="sidebar__cost-title">
+        Цена
+      </div>
+      <button class="sidebar__cost-btn"></button>
+    </div>
+    <div class="sidebar__cost-inputs">
+      <div class="sidebar__cost-input-wrapper">
+        <input type="number" class="sidebar__cost-input" placeholder="10 000">
+      </div>
+      <div class="sidebar__cost-input-wrapper">
+        <input type="number" class="sidebar__cost-input" placeholder="290 000">
+      </div>
+    </div>
+    <div id="range" class="range"></div>   
+  </div>
+  <div class="sidebar__category category">
+    <div class="sidebar__category-title-wrapper category-title-wrapper">
+      <div class="sidebar__category-title category-title">
+        Название
+      </div>
+     <button class="sidebar__category-btn category-btn"></button>
+    </div>
+    <ul class="sidebar__category-list">
+      <li class="sidebar__category-item category-item">
+        <a href="#">все</a>
+      </li>
+      <li class="sidebar__category-item category-item">
+        <a href="#">ПЛАТЬЯ</a>
+      </li>
+      <li class="sidebar__category-item category-item">
+        <a href="#">БОХО-КИМОНО</a>
+      </li>
+      <li class="sidebar__category-item category-item">
+        <a href="#">БРЮКИ</a>
+      </li>
+      <li class="sidebar__category-item category-item">
+        <a href="#">БРЮЧНЫЙ КОСТЮМ</a>
+      </li>
+      <li class="sidebar__category-item category-item">
+        <a href="#">КОМБИНЕЗОН</a>
+      </li>
+      <li class="sidebar__category-item category-item">
+        <a href="#">НАКИДКИ</a>
+      </li>
+      <li class="sidebar__category-item category-item">
+        <a href="#">ПИДЖАКИ И КОФТЫ</a>
+      </li>
+      <li class="sidebar__category-item category-item">
+        <a href="#">ПОЯСА</a>
+      </li>
+      <li class="sidebar__category-item category-item">
+        <a href="#">ШЛЯПКИ</a>
+      </li>
+      <li class="sidebar__category-item category-item">
+        <a href="#">ЮБКИ</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="sidebar__type category">
+    <div class="sidebar__type-title-wrapper category-title-wrapper">
+      <div class="sidebar__type-title category-title">
+        СИЛУЭТ
+      </div>
+     <button class="sidebar__type-btn category-btn"></button>
+    </div>
+    <ul class="sidebar__type-list">
+      <li class="sidebar__type-item category-item">
+        <input type="checkbox" id="type1" class="custom-checkbox">
+        <label for="type1">А-СИЛУЕТ</label>
+      </li>
+      <li class="sidebar__type-item category-item">
+        <input type="checkbox" id="type2" class="custom-checkbox">
+        <label for="type2">ВЕНЧАЛЬНЫЕ</label>
+      </li>
+      <li class="sidebar__type-item category-item">
+        <input type="checkbox" id="type3" class="custom-checkbox">
+        <label for="type3">ВЫШИВКА</label>
+      </li>
+      <li class="sidebar__type-item category-item">
+        <input type="checkbox" id="type4" class="custom-checkbox">
+        <label for="type4">ЗАКРЫТЫЕ</label>
+      </li>
+      <li class="sidebar__type-item category-item">
+        <input type="checkbox" id="type5" class="custom-checkbox">
+        <label for="type5">КОРСЕТНЫЕ</label>
+      </li>
+      <li class="sidebar__type-item category-item">
+        <input type="checkbox" id="type6" class="custom-checkbox">
+        <label for="type6">КРУЖЕВНЫЕ</label>
+      </li>
+      <li class="sidebar__type-item category-item">
+        <input type="checkbox" id="type7" class="custom-checkbox">
+        <label for="type7">ОТКРЫТЫЕ</label>
+      </li>
+      <li class="sidebar__type-item category-item">
+        <input type="checkbox" id="type8" class="custom-checkbox">
+        <label for="type8">ПРЯМЫЕ</label>
+      </li>
+      <li class="sidebar__type-item category-item">
+        <input type="checkbox" id="type9" class="custom-checkbox">
+        <label for="type9">ПЫШНЫЕ</label>
+      </li>
+      <li class="sidebar__type-item category-item">
+        <input type="checkbox" id="type10" class="custom-checkbox">
+        <label for="type10">РУКАВ 3/4</label>
+      </li>   
+      <li class="sidebar__type-item category-item">
+        <input type="checkbox" id="type11" class="custom-checkbox">
+        <label for="type11">РЫБКА</label>
+      </li>    
+    </ul>
+  </div>
+
+  <div class="sidebar__style category">
+    <div class="sidebar__style-title-wrapper category-title-wrapper">
+      <div class="sidebar__style-title category-title">
+        стиль
+      </div>
+     <button class="sidebar__style-btn category-btn"></button>
+    </div>
+    <ul class="sidebar__style-list">
+      <li class="sidebar__style-item category-item">
+        <input type="checkbox" id="style1" class="custom-checkbox">
+        <label for="style1">ВИНТАЖНЫЙ</label>
+      </li>
+      <li class="sidebar__style-item category-item">
+        <input type="checkbox" id="style2" class="custom-checkbox">
+        <label for="style2">ГРЕЧЕСКИЕ</label>
+      </li>
+      <li class="sidebar__style-item category-item">
+        <input type="checkbox" id="style3" class="custom-checkbox">
+        <label for="style3">КЛАССИЧЕСКИЕ</label>
+      </li>
+      <li class="sidebar__style-item category-item">
+        <input type="checkbox" id="style4" class="custom-checkbox">
+        <label for="style4">С БАНТОМ</label>
+      </li>
+      <li class="sidebar__style-item category-item">
+        <input type="checkbox" id="style5" class="custom-checkbox">
+        <label for="style5">С ОТКРЫТОЙ СПИНОЙ</label>
+      </li>
+      <li class="sidebar__style-item category-item">
+        <input type="checkbox" id="style6" class="custom-checkbox">
+        <label for="style6">СОВРЕМЕННЫЙ</label>
+      </li>
+      <li class="sidebar__style-item category-item">
+        <input type="checkbox" id="style7" class="custom-checkbox">
+        <label for="style7">ФАТИНОВЫЕ</label>
+      </li>       
+    </ul>
+  </div>
+
+  <div class="sidebar__color category">
+    <div class="sidebar__color-title-wrapper category-title-wrapper">
+      <div class="sidebar__color-title category-title">
+        ЦВЕТ
+      </div>
+     <button class="sidebar__color-btn category-btn"></button>
+    </div>
+    <ul class="sidebar__color-list">
+      <li class="sidebar__color-item category-item">
+        <input type="checkbox" id="color1" class="custom-checkbox">
+        <label for="color1">АЙВОРИ</label>
+      </li>
+      <li class="sidebar__color-item category-item">
+        <input type="checkbox" id="color2" class="custom-checkbox">
+        <label for="color2">БЕЛЫЙ</label>
+      </li>
+      <li class="sidebar__color-item category-item">
+        <input type="checkbox" id="color3" class="custom-checkbox">
+        <label for="color3">ГОЛУБОЙ</label>
+      </li>
+      <li class="sidebar__color-item category-item">
+        <input type="checkbox" id="color4" class="custom-checkbox">
+        <label for="color4">ЖЕМЧУЖНЫЙ</label>
+      </li>
+      <li class="sidebar__color-item category-item">
+        <input type="checkbox" id="color5" class="custom-checkbox">
+        <label for="color5">ЗЕЛЕНЫЙ</label>
+      </li>
+      <li class="sidebar__color-item category-item">
+        <input type="checkbox" id="color6" class="custom-checkbox">
+        <label for="color6">ЗОЛОТО</label>
+      </li>
+      <li class="sidebar__color-item category-item">
+        <input type="checkbox" id="color7" class="custom-checkbox">
+        <label for="color7">КОРИЧНЕВЫЙ</label>
+      </li> 
+      <li class="sidebar__color-item category-item">
+        <input type="checkbox" id="color8" class="custom-checkbox">
+        <label for="color8">КРЕМОВЫЕ</label>
+      </li>   
+      <li class="sidebar__color-item category-item">
+        <input type="checkbox" id="color9" class="custom-checkbox">
+        <label for="color9">СЕРЕБРО</label>
+      </li>   
+      <li class="sidebar__color-item category-item">
+        <input type="checkbox" id="color10" class="custom-checkbox">
+        <label for="color10">СЕРЫЙ</label>
+      </li>   
+      <li class="sidebar__color-item category-item">
+        <input type="checkbox" id="color11" class="custom-checkbox">
+        <label for="color11">БЛЕСТКИ</label>
+      </li>   
+      <li class="sidebar__color-item category-item">
+        <input type="checkbox" id="color12" class="custom-checkbox">
+        <label for="color12">СИНИЙ</label>
+      </li>   
+      <li class="sidebar__color-item category-item">
+        <input type="checkbox" id="color13" class="custom-checkbox">
+        <label for="color13">ЧЕРНЫЙ</label>
+      </li>            
+    </ul>
+  </div>
+</div>
+        <ul class="catalog__products">
+          <li class="product__item">
+  <a href="#">
+    <picture><source srcset="img/wedding-dress/wedding-dress-img1.webp" type="image/webp"><img src="img/wedding-dress/wedding-dress-img1.png" alt="model-dress"></picture>
+    <div class="product__item-offer">
+      <div class="product__item-title">EMASA</div>
+      <div class="product__item-text">100%шёлк, ручная вышивка</div>
+      <div class="product__item-price">        
+        <span class="now-price">51 000 ₽ </span>
+      </div>
+    </div>   
+  </a>
+</li>
+          <li class="product__item">
+  <a href="#">
+    <picture><source srcset="img/wedding-dress/wedding-dress-img1.webp" type="image/webp"><img src="img/wedding-dress/wedding-dress-img1.png" alt="model-dress"></picture>
+    <div class="product__item-offer">
+      <div class="product__item-title">EMASA</div>
+      <div class="product__item-text">100%шёлк, ручная вышивка</div>
+      <div class="product__item-price">        
+        <span class="now-price">51 000 ₽ </span>
+      </div>
+    </div>   
+  </a>
+</li>
+          <li class="product__item">
+  <a href="#">
+    <picture><source srcset="img/wedding-dress/wedding-dress-img1.webp" type="image/webp"><img src="img/wedding-dress/wedding-dress-img1.png" alt="model-dress"></picture>
+    <div class="product__item-offer">
+      <div class="product__item-title">EMASA</div>
+      <div class="product__item-text">100%шёлк, ручная вышивка</div>
+      <div class="product__item-price">        
+        <span class="now-price">51 000 ₽ </span>
+      </div>
+    </div>   
+  </a>
+</li>
+          <li class="product__item">
+  <a href="#">
+    <picture><source srcset="img/wedding-dress/wedding-dress-img1.webp" type="image/webp"><img src="img/wedding-dress/wedding-dress-img1.png" alt="model-dress"></picture>
+    <div class="product__item-offer">
+      <div class="product__item-title">EMASA</div>
+      <div class="product__item-text">100%шёлк, ручная вышивка</div>
+      <div class="product__item-price">        
+        <span class="now-price">51 000 ₽ </span>
+      </div>
+    </div>   
+  </a>
+</li>
+          <li class="product__item">
+  <a href="#">
+    <picture><source srcset="img/wedding-dress/wedding-dress-img1.webp" type="image/webp"><img src="img/wedding-dress/wedding-dress-img1.png" alt="model-dress"></picture>
+    <div class="product__item-offer">
+      <div class="product__item-title">EMASA</div>
+      <div class="product__item-text">100%шёлк, ручная вышивка</div>
+      <div class="product__item-price">        
+        <span class="now-price">51 000 ₽ </span>
+      </div>
+    </div>   
+  </a>
+</li>
+          <li class="product__item">
+  <a href="#">
+    <picture><source srcset="img/wedding-dress/wedding-dress-img1.webp" type="image/webp"><img src="img/wedding-dress/wedding-dress-img1.png" alt="model-dress"></picture>
+    <div class="product__item-offer">
+      <div class="product__item-title">EMASA</div>
+      <div class="product__item-text">100%шёлк, ручная вышивка</div>
+      <div class="product__item-price">        
+        <span class="now-price">51 000 ₽ </span>
+      </div>
+    </div>   
+  </a>
+</li>
+          <li class="product__item">
+  <a href="#">
+    <picture><source srcset="img/wedding-dress/wedding-dress-img1.webp" type="image/webp"><img src="img/wedding-dress/wedding-dress-img1.png" alt="model-dress"></picture>
+    <div class="product__item-offer">
+      <div class="product__item-title">EMASA</div>
+      <div class="product__item-text">100%шёлк, ручная вышивка</div>
+      <div class="product__item-price">        
+        <span class="now-price">51 000 ₽ </span>
+      </div>
+    </div>   
+  </a>
+</li>
+          <li class="product__item">
+  <a href="#">
+    <picture><source srcset="img/wedding-dress/wedding-dress-img1.webp" type="image/webp"><img src="img/wedding-dress/wedding-dress-img1.png" alt="model-dress"></picture>
+    <div class="product__item-offer">
+      <div class="product__item-title">EMASA</div>
+      <div class="product__item-text">100%шёлк, ручная вышивка</div>
+      <div class="product__item-price">        
+        <span class="now-price">51 000 ₽ </span>
+      </div>
+    </div>   
+  </a>
+</li>
+          <li class="product__item">
+  <a href="#">
+    <picture><source srcset="img/wedding-dress/wedding-dress-img1.webp" type="image/webp"><img src="img/wedding-dress/wedding-dress-img1.png" alt="model-dress"></picture>
+    <div class="product__item-offer">
+      <div class="product__item-title">EMASA</div>
+      <div class="product__item-text">100%шёлк, ручная вышивка</div>
+      <div class="product__item-price">        
+        <span class="now-price">51 000 ₽ </span>
+      </div>
+    </div>   
+  </a>
+</li>
+          <li class="product__item">
+  <a href="#">
+    <picture><source srcset="img/wedding-dress/wedding-dress-img1.webp" type="image/webp"><img src="img/wedding-dress/wedding-dress-img1.png" alt="model-dress"></picture>
+    <div class="product__item-offer">
+      <div class="product__item-title">EMASA</div>
+      <div class="product__item-text">100%шёлк, ручная вышивка</div>
+      <div class="product__item-price">        
+        <span class="now-price">51 000 ₽ </span>
+      </div>
+    </div>   
+  </a>
+</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+			
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="footer__inner">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__category">
+          <div class="footer__category-title">СИЛУЭТЫ</div>
+          <ul class="footer__category-list">
+            <li class="footer__category-item"><a href="#">А-СИЛУЕТ</a></li>
+            <li class="footer__category-item"><a href="#">СКРОМНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ПРЯМЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ОТКРЫТЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ПЫШНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">КРУЖЕВНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">РЫБКА</a></li>
+            <li class="footer__category-item"><a href="#">ВЕНЧАЛЬНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ДЛИННЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">КОКТЕЙЛЬНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">КОРОТКИЕ</a></li>
+            <li class="footer__category-item"><a href="#">ВЕЧЕРНИЕ</a></li>
+            <li class="footer__category-item"><a href="#">ВЕНЧАЛЬНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ЗАКРЫТЫЕ</a></li>
+          </ul>
+        </div>
+        <div class="footer__category">
+          <div class="footer__category-title">СТИЛИ</div>
+          <ul class="footer__category-list">
+            <li class="footer__category-item"><a href="#">А-КЛАССИЧЕСКИЕ</a></li>
+            <li class="footer__category-item"><a href="#">ПРОВАНС</a></li>
+            <li class="footer__category-item"><a href="#">ЕВРОПЕЙСКИЙ СТИЛЬ</a></li>
+            <li class="footer__category-item"><a href="#">КАНТРИ</a></li>
+            <li class="footer__category-item"><a href="#">АМПИР</a></li>
+            <li class="footer__category-item"><a href="#">СТИЛЯГИ</a></li>
+            <li class="footer__category-item"><a href="#">ГРЕЧЕСКИЕ</a></li>
+            <li class="footer__category-item"><a href="#">БОХО</a></li>
+            <li class="footer__category-item"><a href="#">РЕТРО</a></li>
+            <li class="footer__category-item"><a href="#">ВИНТАЖНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">РУСТИК</a></li>
+            <li class="footer__category-item"><a href="#">БОГЕМНЫЕ</a></li>
+          </ul>
+        </div>
+        <div class="footer__category">
+          <div class="footer__category-title">ЦВЕТА</div>
+          <ul class="footer__category-list">
+            <li class="footer__category-item"><a href="#">БЕЛЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ЛИЛОВЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">АЙВОРИ</a></li>
+            <li class="footer__category-item"><a href="#">КАПУЧИНО</a></li>
+            <li class="footer__category-item"><a href="#">ЗОЛОТЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">РОЗОВЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ЖЕМЧУЖНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ПУДРОВЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">КРЕМОВЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ЦВЕТНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">СЕРЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ЗЕЛЕНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ГОЛУБЫЕ</a></li>
+          </ul>
+        </div>
+        <div class="footer__category">
+          <div class="footer__category-title">ДРУГОЕ</div>
+          <ul class="footer__category-list">
+            <li class="footer__category-item"><a href="#">РУКАВ 3/4</a></li>
+            <li class="footer__category-item"><a href="#">С РАЗРЕЗОМ</a></li>
+            <li class="footer__category-item"><a href="#">ИЗ АТЛАСА</a></li>
+            <li class="footer__category-item"><a href="#">ДЛИННЫЙ РУКАВ</a></li>
+            <li class="footer__category-item"><a href="#">СО СТРАЗАМИ</a></li>
+            <li class="footer__category-item"><a href="#">ЭЛЕГАНТНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">С ВОРОТНИКОМ</a></li>
+            <li class="footer__category-item"><a href="#">СО ШЛЕЙФОМ</a></li>
+            <li class="footer__category-item"><a href="#">ЭЛИТНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ДЛЯ БЕРЕМЕННЫХ</a></li>
+            <li class="footer__category-item"><a href="#">СОВРЕМЕННЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ЭКСКЛЮЗИВНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ДЛЯ ПОЛНЫХ</a></li>
+            <li class="footer__category-item"><a href="#">ШЁЛКОВЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">НЕОБЫЧНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">С ДЕКОЛЬТЕ</a></li>
+            <li class="footer__category-item"><a href="#">КРЕАТИВНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">НЕЖНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">КОРСЕТНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ЛЕГКИЕ</a></li>
+            <li class="footer__category-item"><a href="#">МОДНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">РАСШИТЫЕ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <a href="#" class="footer__logo">
+      <img src="img/footer/footer-logo.svg" alt="logo">
+    </a>
+    <div class="footer__text">
+      <span>Москва, Ленинградское шоссе, д.96 стр.1, м. речной вокзал</span>
+      <span>+7 (495) 778-41-30</span>
+      <span>storides@gmail.com</span>
+    </div>
+    <ul class="social-list">
+  <li class="social-item">
+    <a href="#"><img src="img/footer/facebook.svg" alt="social-img"></a>
+  </li>
+  <li class="social-item">
+    <a href="#"><img src="img/footer/vk.svg" alt="social-img"></a>
+  </li>
+  <li class="social-item">
+    <a href="#"><img src="img/footer/instagram.svg" alt="social-img"></a>
+  </li>
+  <li class="social-item">
+    <a href="#"><img src="img/footer/pinterest.svg" alt="social-img"></a>
+  </li>
+  <li class="social-item">
+    <a href="#"><img src="img/footer/twitter.svg" alt="social-img"></a>
+  </li>
+</ul>
+    <div class="footer__copyright">© VICTORIA SPIRINA, 2022 </div>
+  </div>
+
+
+</footer>
+	</div>
+
+	<script src="js/nouislider.min.js?_v=20220314174238"></script>
+	<script src="js/app.min.js?_v=20220314174238"></script>
+</body>
+
+</html>
+
+
+
+
