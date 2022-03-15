@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<link rel="stylesheet" href="css/style.min.css?_v=20220314174238">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220315080813">
 	<title>Контакты</title>
 </head>
 
@@ -21,8 +21,8 @@
         <img src="img/header-all/logo.svg" alt="logo">
       </a>
       <div class="header__order">
-        <a href="#" class="header__order-cart"></a>
-        <a href="#" class="header__order-modal btn">ЗАПИСАТЬСЯ НА ПРИМЕРКУ</a>
+        <a href="#" class="header__order-cart"></a>        
+        <button class="btn-reset order-modal btn" data-graph-path="modal-order">ЗАПИСАТЬСЯ НА ПРИМЕРКУ</button>
       </div>
     </div>
     <div class="header__menu">
@@ -250,12 +250,48 @@
 </ul>
     <div class="footer__copyright">© VICTORIA SPIRINA, 2022 </div>
   </div>
-
-
 </footer>
+<!-- Modal -->
+<div class="graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal-order">
+    <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="graph-modal__title">
+        ЗАПИСАТЬСЯ НА ПРИМЕРКУ
+      </div>
+      <div class="graph-modal__input-wrapper name">
+        <label for="modal-name">Ваше имя</label>
+        <input type="text" id="modal-name">
+      </div>
+      <div class="graph-modal__input-wrapper phone">
+        <label for="modal-phone">ваш номер телефона</label>
+        <input type="number" id="modal-phone">
+      </div>
+      <div class="graph-modal__input-wrapper email">
+        <label for="modal-mail">Ваш e-mail</label>
+        <input type="email" id="modal-mail">
+      </div>
+      <div class="graph-modal__input-dates">
+        <div class="graph-modal__input-date">
+          <label for="modal-date">Дата</label>
+          <input type="date" id="modal-date">
+        </div>
+        <div class="graph-modal__input-time">
+          <label for="modal-time">Время</label>
+          <input type="time" id="modal-time">
+        </div>
+      </div>
+      <button class="graph-modal__btn btn_cart">отправить заявку</button>
+      <div class="graph-modal__welcome">
+        <span>МЫ РАДЫ ВИДЕТЬ ВАС ЕЖЕДНЕВНО 12:00 - 22:00</span>
+        <span>Москва, Ленинградское шоссе, д.96 стр.1</span>
+      </div>
+    </div>
+  </div>
+</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20220314174238"></script>
+	<script src="js/app.min.js?_v=20220315080813"></script>
 </body>
 
 </html>

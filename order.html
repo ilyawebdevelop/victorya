@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="stylesheet" href="css/style.min.css?_v=20220315080813">
+	<title>Мой заказ</title>
+</head>
+
+<body>
+	<!-- Header -->
+<header class="header header-all" id="header">
+  <div class="container-1800">
+    <div class="header__top">
+      <div class="header__contacts">
+        <a href="#" class="header__place">Москва, Волоколамское шоссе, д.2</a>
+        <a href="tel:+74957784130" class="header__phone">+7 (495) 778-41-30</a>
+      </div>
+      <a href="#" class="header__logo">
+        <img src="img/header-all/logo.svg" alt="logo">
+      </a>
+      <div class="header__order">
+        <a href="#" class="header__order-cart"></a>        
+        <button class="btn-reset order-modal btn" data-graph-path="modal-order">ЗАПИСАТЬСЯ НА ПРИМЕРКУ</button>
+      </div>
+    </div>
+    <div class="header__menu">
+      <ul class="header__menu-list">
+        <li class="header__menu-item">
+          <a href="#">КОНЦЕПЦИЯ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#">НАШИ НЕВЕСТЫ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#">КОЛЛЕКЦИИ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#">КОНТАКТЫ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#">ON-LINE SHOP</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#">SALE</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+	<div class="wrapper">
+		<main class="main">
+			<!-- Breadcrumps -->
+<section class="breadcrumps" id="breadcrumps">
+  <div class="container">
+    <div class="breadcrumps__wrapper">
+      <a href="#">Главная</a>
+      <a href="#">On-line shop</a>
+    </div>
+  </div>
+</section>
+			<!-- order -->
+<section class="order" id="order">
+  <div class="container-1290">
+    <h2 class="order__title">Мой заказ</h2>
+    <div class="tabs" data-tabs="popup">
+      <ul class="tabs__nav">
+        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Авторизация</button></li>
+        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Доставка</button></li>
+        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Личные данные</button></li>
+        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Оплата</button></li>
+      </ul>
+      <div class="tabs__content">
+        <div class="tabs__panel authorization-tab">
+          <div class="tabs__panel-wrapper">
+            <!-- authorization -->
+<form class="authorization form-order">
+  <div class="authorization__title form-title">Авторизация</div>
+  <p class="authorization__text">
+    Введите свой адрес электронной почты. Если Вы хотите продолжить как авторизированный пользователь. На указанный
+    адрес вам будет выслан <span class="bold-text">сгенерированный пароль</span>.
+  </p>
+  <div class="authorization__input-wrapper form-input-wrapper">
+    <div class="authorization__input form-input">
+      <label for="form-mail">Ваш emai-l</label>
+      <input type="email" id="form-mail">
+    </div>
+    <div class="authorization__input form-input">
+      <label for="form-pass">Введите присланный пароль</label>
+      <input type="email" id="form-pass">
+    </div>
+  </div>
+  <button class="authorization__btn form-input-btn">ДАЛЕЕ</button>
+</form>
+            <!-- total -->
+<div class="total">
+  <ul class="total__products">
+    <li class="total__product">
+      <div class="total__product-left">
+        <picture><source srcset="img/total/total-img1.webp" type="image/webp"><img src="img/total/total-img1.jpg" alt="product-image"></picture>
+        <div class="total__product-wrapper">
+          <div class="total__product-title">
+            ЮБКА
+          </div>
+          <div class="total__product-type">Коллекция: <span>Almina lua</span></div>
+          <div class="total__product-type">Цвет: <span>ЧЁРНЫЙ</span></div>
+          <div class="total__product-type">Размер: <span>42</span></div>
+          <div class="total__product-type">Количество: <span>1</span></div>
+          <div class="total__product-price">51 000 ₽</div>
+        </div>
+      </div>
+      <div class="total__product-right">
+        <button class="total__product-btn-close">
+          <img src="img/total/close-img.svg" alt="close-img">
+        </button>
+      </div>
+    </li>
+    <li class="total__product">
+      <div class="total__product-left">
+        <picture><source srcset="img/total/total-img1.webp" type="image/webp"><img src="img/total/total-img1.jpg" alt="product-image"></picture>
+        <div class="total__product-wrapper">
+          <div class="total__product-title">
+            ЮБКА
+          </div>
+          <div class="total__product-type">Коллекция: <span>Almina lua</span></div>
+          <div class="total__product-type">Цвет: <span>ЧЁРНЫЙ</span></div>
+          <div class="total__product-type">Размер: <span>42</span></div>
+          <div class="total__product-type">Количество: <span>1</span></div>
+          <div class="total__product-price">51 000 ₽</div>
+        </div>
+      </div>
+      <div class="total__product-right">
+        <button class="total__product-btn-close">
+          <img src="img/total/close-img.svg" alt="close-img">
+        </button>
+      </div>
+    </li>
+    <li class="total__product">
+      <div class="total__product-left">
+        <picture><source srcset="img/total/total-img1.webp" type="image/webp"><img src="img/total/total-img1.jpg" alt="product-image"></picture>
+        <div class="total__product-wrapper">
+          <div class="total__product-title">
+            ЮБКА
+          </div>
+          <div class="total__product-type">Коллекция: <span>Almina lua</span></div>
+          <div class="total__product-type">Цвет: <span>ЧЁРНЫЙ</span></div>
+          <div class="total__product-type">Размер: <span>42</span></div>
+          <div class="total__product-type">Количество: <span>1</span></div>
+          <div class="total__product-price">51 000 ₽</div>
+        </div>
+      </div>
+      <div class="total__product-right">
+        <button class="total__product-btn-close">
+          <img src="img/total/close-img.svg" alt="close-img">
+        </button>
+      </div>
+    </li>
+  </ul>
+  <div class="total__price">
+    <div class="total__price-name">
+      <div class="total__price-name-lg">Итог:</div>
+      <div class="total__price-name-lg">151 000 ₽</div>
+    </div>
+    <div class="total__price-products">
+      <div class="total__price-products-md">Товары, 3 шт</div>
+      <div class="total__price-products-md">151 000 ₽</div>
+    </div>
+    <a class="total__price-personal" href="#">
+      Отправляя заказ Вы даете нам разрешение на
+      обработку персональных данных
+    </a>
+  </div>
+</div>
+          </div>         
+        </div>
+        <div class="tabs__panel delivery-tab">
+          <div class="tabs__panel-wrapper">
+            <!-- delivery -->
+<form class="delivery form-order">
+  <div class="delivery__title form-title">Доставка</div>
+ 
+  <div class="delivery__input-wrapper form-input-wrapper">
+    <div class="delivery__input form-input"> 
+      <div class="checkbox-wrapper">        
+        <input type="checkbox" class="custom-checkbox" id="delivery-cb1"checked>   
+        <label for="delivery-cb1"></label>
+      </div>      
+      <div class="delivery__button curier">КУРЬЕРСКАЯ ДОСТАВКА</div>
+    </div>
+    <div class="delivery__input form-input"> 
+      <div class="checkbox-wrapper">        
+        <input type="checkbox" class="custom-checkbox" id="delivery-cb2">   
+        <label for="delivery-cb2"></label>
+      </div>      
+      <div class="delivery__button myself">САМОВЫВОЗ</div>
+    </div>
+  </div>
+
+  <div class="country__input-wrapper form-input-wrapper">
+    <div class="country__input form-input">
+      <label for="form-country">Страна</label>
+      <input type="text" id="form-country" placeholder="Россия">
+    </div>
+    <div class="delivery__input form-input">
+      <label for="form-index">Индекс</label>
+      <input type="email" id="form-index" placeholder="692 500">
+    </div>
+  </div>
+  <div class="city__input form-input">
+    <label for="form-city">город</label>
+    <input type="text" class="delivery__city" placeholder="Санкт-Петербург" id="form-city">
+  </div>
+  <div class="adres__input form-input">
+    <label for="form-adres">АДРЕС</label>
+    <input type="text" class="delivery__adres" placeholder="Комендантский проспект, 66к3, кв. 308" id="form-adres">
+  </div>
+  <div class="delivery__btns">
+    <button class="delivery__btn-back form-input-btn">Вернуться назад</button>
+    <button class="delivery__btn form-input-btn">ДАЛЕЕ</button>
+  </div>  
+</form>
+            <!-- total -->
+<div class="total">
+  <ul class="total__products">
+    <li class="total__product">
+      <div class="total__product-left">
+        <picture><source srcset="img/total/total-img1.webp" type="image/webp"><img src="img/total/total-img1.jpg" alt="product-image"></picture>
+        <div class="total__product-wrapper">
+          <div class="total__product-title">
+            ЮБКА
+          </div>
+          <div class="total__product-type">Коллекция: <span>Almina lua</span></div>
+          <div class="total__product-type">Цвет: <span>ЧЁРНЫЙ</span></div>
+          <div class="total__product-type">Размер: <span>42</span></div>
+          <div class="total__product-type">Количество: <span>1</span></div>
+          <div class="total__product-price">51 000 ₽</div>
+        </div>
+      </div>
+      <div class="total__product-right">
+        <button class="total__product-btn-close">
+          <img src="img/total/close-img.svg" alt="close-img">
+        </button>
+      </div>
+    </li>
+    <li class="total__product">
+      <div class="total__product-left">
+        <picture><source srcset="img/total/total-img1.webp" type="image/webp"><img src="img/total/total-img1.jpg" alt="product-image"></picture>
+        <div class="total__product-wrapper">
+          <div class="total__product-title">
+            ЮБКА
+          </div>
+          <div class="total__product-type">Коллекция: <span>Almina lua</span></div>
+          <div class="total__product-type">Цвет: <span>ЧЁРНЫЙ</span></div>
+          <div class="total__product-type">Размер: <span>42</span></div>
+          <div class="total__product-type">Количество: <span>1</span></div>
+          <div class="total__product-price">51 000 ₽</div>
+        </div>
+      </div>
+      <div class="total__product-right">
+        <button class="total__product-btn-close">
+          <img src="img/total/close-img.svg" alt="close-img">
+        </button>
+      </div>
+    </li>
+    <li class="total__product">
+      <div class="total__product-left">
+        <picture><source srcset="img/total/total-img1.webp" type="image/webp"><img src="img/total/total-img1.jpg" alt="product-image"></picture>
+        <div class="total__product-wrapper">
+          <div class="total__product-title">
+            ЮБКА
+          </div>
+          <div class="total__product-type">Коллекция: <span>Almina lua</span></div>
+          <div class="total__product-type">Цвет: <span>ЧЁРНЫЙ</span></div>
+          <div class="total__product-type">Размер: <span>42</span></div>
+          <div class="total__product-type">Количество: <span>1</span></div>
+          <div class="total__product-price">51 000 ₽</div>
+        </div>
+      </div>
+      <div class="total__product-right">
+        <button class="total__product-btn-close">
+          <img src="img/total/close-img.svg" alt="close-img">
+        </button>
+      </div>
+    </li>
+  </ul>
+  <div class="total__price">
+    <div class="total__price-name">
+      <div class="total__price-name-lg">Итог:</div>
+      <div class="total__price-name-lg">151 000 ₽</div>
+    </div>
+    <div class="total__price-products">
+      <div class="total__price-products-md">Товары, 3 шт</div>
+      <div class="total__price-products-md">151 000 ₽</div>
+    </div>
+    <a class="total__price-personal" href="#">
+      Отправляя заказ Вы даете нам разрешение на
+      обработку персональных данных
+    </a>
+  </div>
+</div>
+          </div>
+        </div>
+        <div class="tabs__panel personal-tab">
+          <div class="tabs__panel-wrapper">
+            <!-- personal -->
+<form class="personal form-order">
+  <div class="personal__title form-title">Личные данные</div>
+
+  <div class="personal__input form-input">
+    <label for="form-name">ваше имя</label>
+    <input type="text" placeholder="Инна Петрова" id="form-name">
+  </div>
+
+  <div class="personal__input-wrapper form-input-wrapper">
+    <div class="personal__input form-input">
+      <label for="form-phone">Ваш номер тедефона</label>
+      <input type="number" id="form-phone" placeholder="+ 7 924-369-77-96">
+    </div>
+    <div class="personal__input form-input">
+      <label for="form-mail">Ваш emai-l</label>
+      <input type="email" id="form-mail" placeholder="pochta@mail.ru">
+    </div>
+  </div>
+  <div class="delivery__btns">
+    <button class="delivery__btn-back form-input-btn">Вернуться назад</button>
+    <button class="delivery__btn form-input-btn">ДАЛЕЕ</button>
+  </div>
+  <div class="personal__agreement">
+    <input type="checkbox" id="agreement" class="custom-checkbox">
+    <label for="agreement">Согласие с политикой компании </label>
+  </div>
+  <div class="politics">
+    <div class="politics__title">
+      Политика компании
+    </div>
+    <p>
+      Равным образом укрепление и развитие структуры в значительной степени обуславливает создание направлений
+      прогрессивного развития. Идейные соображения высшего порядка, а также укрепление и развитие структуры способствует
+      подготовки и реализации соответствующий условий активизации. Не следует, однако забывать, что новая модель
+      организационной деятельности играет важную роль в формировании систем массового участия. Товарищи! дальнейшее
+      развитие различных форм деятельности требуют от нас анализа систем массового участия. Идейные соображения высшего
+      порядка, а также начало повседневной работы по формированию позиции требуют от нас анализа системы обучения
+      кадров, соответствует насущным потребностям.
+    </p>
+    <p>
+      Разнообразный и богатый опыт рамки и место обучения кадров требуют от нас анализа системы обучения кадров,
+      соответствует насущным потребностям. Задача организации, в особенности же начало повседневной работы по
+      формированию позиции влечет за собой процесс внедрения и модернизации существенных финансовых и административных
+      условий. Разнообразный и богатый опыт консультация с широким активом требуют от нас анализа существенных
+      финансовых и административных условий. Идейные соображения высшего порядка, а также рамки и место обучения кадров
+      требуют от нас анализа модели развития.
+    </p>
+    <p>
+      Равным образом новая модель организационной деятельности способствует подготовки и реализации направлений
+      прогрессивного развития. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей
+      деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач.
+      Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности позволяет оценить значение
+      новых предложений. С другой стороны консультация с широким активом позволяет выполнять важные задания по
+      разработке систем массового участия. Таким образом реализация намеченных плановых заданий играет важную роль в
+      формировании существенных финансовых и административных условий.
+    </p>
+    <p>
+      С другой стороны реализация намеченных плановых заданий требуют от нас анализа новых предложений. Товарищи! рамки
+      и место обучения кадров в значительной степени обуславливает создание дальнейших направлений развития. Равным
+      образом консультация с широким активом влечет за собой процесс внедрения и модернизации системы обучения кадров,
+      соответствует насущным потребностям. Разнообразный и богатый опыт консультация с широким активом играет важную
+      роль в формировании дальнейших направлений развития. Товарищи! рамки и место обучения кадров позволяет оценить
+      значение существенных финансовых и административных условий. Разнообразный и богатый опыт укрепление и развитие
+      структуры требуют от нас анализа направлений прогрессивного развития.
+    </p>
+  </div>
+</form>
+            <!-- total -->
+<div class="total">
+  <ul class="total__products">
+    <li class="total__product">
+      <div class="total__product-left">
+        <picture><source srcset="img/total/total-img1.webp" type="image/webp"><img src="img/total/total-img1.jpg" alt="product-image"></picture>
+        <div class="total__product-wrapper">
+          <div class="total__product-title">
+            ЮБКА
+          </div>
+          <div class="total__product-type">Коллекция: <span>Almina lua</span></div>
+          <div class="total__product-type">Цвет: <span>ЧЁРНЫЙ</span></div>
+          <div class="total__product-type">Размер: <span>42</span></div>
+          <div class="total__product-type">Количество: <span>1</span></div>
+          <div class="total__product-price">51 000 ₽</div>
+        </div>
+      </div>
+      <div class="total__product-right">
+        <button class="total__product-btn-close">
+          <img src="img/total/close-img.svg" alt="close-img">
+        </button>
+      </div>
+    </li>
+    <li class="total__product">
+      <div class="total__product-left">
+        <picture><source srcset="img/total/total-img1.webp" type="image/webp"><img src="img/total/total-img1.jpg" alt="product-image"></picture>
+        <div class="total__product-wrapper">
+          <div class="total__product-title">
+            ЮБКА
+          </div>
+          <div class="total__product-type">Коллекция: <span>Almina lua</span></div>
+          <div class="total__product-type">Цвет: <span>ЧЁРНЫЙ</span></div>
+          <div class="total__product-type">Размер: <span>42</span></div>
+          <div class="total__product-type">Количество: <span>1</span></div>
+          <div class="total__product-price">51 000 ₽</div>
+        </div>
+      </div>
+      <div class="total__product-right">
+        <button class="total__product-btn-close">
+          <img src="img/total/close-img.svg" alt="close-img">
+        </button>
+      </div>
+    </li>
+    <li class="total__product">
+      <div class="total__product-left">
+        <picture><source srcset="img/total/total-img1.webp" type="image/webp"><img src="img/total/total-img1.jpg" alt="product-image"></picture>
+        <div class="total__product-wrapper">
+          <div class="total__product-title">
+            ЮБКА
+          </div>
+          <div class="total__product-type">Коллекция: <span>Almina lua</span></div>
+          <div class="total__product-type">Цвет: <span>ЧЁРНЫЙ</span></div>
+          <div class="total__product-type">Размер: <span>42</span></div>
+          <div class="total__product-type">Количество: <span>1</span></div>
+          <div class="total__product-price">51 000 ₽</div>
+        </div>
+      </div>
+      <div class="total__product-right">
+        <button class="total__product-btn-close">
+          <img src="img/total/close-img.svg" alt="close-img">
+        </button>
+      </div>
+    </li>
+  </ul>
+  <div class="total__price">
+    <div class="total__price-name">
+      <div class="total__price-name-lg">Итог:</div>
+      <div class="total__price-name-lg">151 000 ₽</div>
+    </div>
+    <div class="total__price-products">
+      <div class="total__price-products-md">Товары, 3 шт</div>
+      <div class="total__price-products-md">151 000 ₽</div>
+    </div>
+    <a class="total__price-personal" href="#">
+      Отправляя заказ Вы даете нам разрешение на
+      обработку персональных данных
+    </a>
+  </div>
+</div>
+          </div>
+        </div>
+        <div class="tabs__panel">4</div>
+      </div>
+    </div>
+  </div>
+</section>
+			
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="footer__inner">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__category">
+          <div class="footer__category-title">СИЛУЭТЫ</div>
+          <ul class="footer__category-list">
+            <li class="footer__category-item"><a href="#">А-СИЛУЕТ</a></li>
+            <li class="footer__category-item"><a href="#">СКРОМНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ПРЯМЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ОТКРЫТЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ПЫШНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">КРУЖЕВНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">РЫБКА</a></li>
+            <li class="footer__category-item"><a href="#">ВЕНЧАЛЬНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ДЛИННЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">КОКТЕЙЛЬНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">КОРОТКИЕ</a></li>
+            <li class="footer__category-item"><a href="#">ВЕЧЕРНИЕ</a></li>
+            <li class="footer__category-item"><a href="#">ВЕНЧАЛЬНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ЗАКРЫТЫЕ</a></li>
+          </ul>
+        </div>
+        <div class="footer__category">
+          <div class="footer__category-title">СТИЛИ</div>
+          <ul class="footer__category-list">
+            <li class="footer__category-item"><a href="#">А-КЛАССИЧЕСКИЕ</a></li>
+            <li class="footer__category-item"><a href="#">ПРОВАНС</a></li>
+            <li class="footer__category-item"><a href="#">ЕВРОПЕЙСКИЙ СТИЛЬ</a></li>
+            <li class="footer__category-item"><a href="#">КАНТРИ</a></li>
+            <li class="footer__category-item"><a href="#">АМПИР</a></li>
+            <li class="footer__category-item"><a href="#">СТИЛЯГИ</a></li>
+            <li class="footer__category-item"><a href="#">ГРЕЧЕСКИЕ</a></li>
+            <li class="footer__category-item"><a href="#">БОХО</a></li>
+            <li class="footer__category-item"><a href="#">РЕТРО</a></li>
+            <li class="footer__category-item"><a href="#">ВИНТАЖНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">РУСТИК</a></li>
+            <li class="footer__category-item"><a href="#">БОГЕМНЫЕ</a></li>
+          </ul>
+        </div>
+        <div class="footer__category">
+          <div class="footer__category-title">ЦВЕТА</div>
+          <ul class="footer__category-list">
+            <li class="footer__category-item"><a href="#">БЕЛЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ЛИЛОВЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">АЙВОРИ</a></li>
+            <li class="footer__category-item"><a href="#">КАПУЧИНО</a></li>
+            <li class="footer__category-item"><a href="#">ЗОЛОТЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">РОЗОВЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ЖЕМЧУЖНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ПУДРОВЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">КРЕМОВЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ЦВЕТНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">СЕРЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ЗЕЛЕНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ГОЛУБЫЕ</a></li>
+          </ul>
+        </div>
+        <div class="footer__category">
+          <div class="footer__category-title">ДРУГОЕ</div>
+          <ul class="footer__category-list">
+            <li class="footer__category-item"><a href="#">РУКАВ 3/4</a></li>
+            <li class="footer__category-item"><a href="#">С РАЗРЕЗОМ</a></li>
+            <li class="footer__category-item"><a href="#">ИЗ АТЛАСА</a></li>
+            <li class="footer__category-item"><a href="#">ДЛИННЫЙ РУКАВ</a></li>
+            <li class="footer__category-item"><a href="#">СО СТРАЗАМИ</a></li>
+            <li class="footer__category-item"><a href="#">ЭЛЕГАНТНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">С ВОРОТНИКОМ</a></li>
+            <li class="footer__category-item"><a href="#">СО ШЛЕЙФОМ</a></li>
+            <li class="footer__category-item"><a href="#">ЭЛИТНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ДЛЯ БЕРЕМЕННЫХ</a></li>
+            <li class="footer__category-item"><a href="#">СОВРЕМЕННЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ЭКСКЛЮЗИВНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ДЛЯ ПОЛНЫХ</a></li>
+            <li class="footer__category-item"><a href="#">ШЁЛКОВЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">НЕОБЫЧНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">С ДЕКОЛЬТЕ</a></li>
+            <li class="footer__category-item"><a href="#">КРЕАТИВНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">НЕЖНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">КОРСЕТНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">ЛЕГКИЕ</a></li>
+            <li class="footer__category-item"><a href="#">МОДНЫЕ</a></li>
+            <li class="footer__category-item"><a href="#">РАСШИТЫЕ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <a href="#" class="footer__logo">
+      <img src="img/footer/footer-logo.svg" alt="logo">
+    </a>
+    <div class="footer__text">
+      <span>Москва, Ленинградское шоссе, д.96 стр.1, м. речной вокзал</span>
+      <span>+7 (495) 778-41-30</span>
+      <span>storides@gmail.com</span>
+    </div>
+    <ul class="social-list">
+  <li class="social-item">
+    <a href="#"><img src="img/footer/facebook.svg" alt="social-img"></a>
+  </li>
+  <li class="social-item">
+    <a href="#"><img src="img/footer/vk.svg" alt="social-img"></a>
+  </li>
+  <li class="social-item">
+    <a href="#"><img src="img/footer/instagram.svg" alt="social-img"></a>
+  </li>
+  <li class="social-item">
+    <a href="#"><img src="img/footer/pinterest.svg" alt="social-img"></a>
+  </li>
+  <li class="social-item">
+    <a href="#"><img src="img/footer/twitter.svg" alt="social-img"></a>
+  </li>
+</ul>
+    <div class="footer__copyright">© VICTORIA SPIRINA, 2022 </div>
+  </div>
+</footer>
+<!-- Modal -->
+<div class="graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal-order">
+    <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="graph-modal__title">
+        ЗАПИСАТЬСЯ НА ПРИМЕРКУ
+      </div>
+      <div class="graph-modal__input-wrapper name">
+        <label for="modal-name">Ваше имя</label>
+        <input type="text" id="modal-name">
+      </div>
+      <div class="graph-modal__input-wrapper phone">
+        <label for="modal-phone">ваш номер телефона</label>
+        <input type="number" id="modal-phone">
+      </div>
+      <div class="graph-modal__input-wrapper email">
+        <label for="modal-mail">Ваш e-mail</label>
+        <input type="email" id="modal-mail">
+      </div>
+      <div class="graph-modal__input-dates">
+        <div class="graph-modal__input-date">
+          <label for="modal-date">Дата</label>
+          <input type="date" id="modal-date">
+        </div>
+        <div class="graph-modal__input-time">
+          <label for="modal-time">Время</label>
+          <input type="time" id="modal-time">
+        </div>
+      </div>
+      <button class="graph-modal__btn btn_cart">отправить заявку</button>
+      <div class="graph-modal__welcome">
+        <span>МЫ РАДЫ ВИДЕТЬ ВАС ЕЖЕДНЕВНО 12:00 - 22:00</span>
+        <span>Москва, Ленинградское шоссе, д.96 стр.1</span>
+      </div>
+    </div>
+  </div>
+</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20220315080813"></script>
+</body>
+
+</html>
+
+
+
+
