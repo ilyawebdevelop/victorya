@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<link rel="stylesheet" href="css/style.min.css?_v=20220315080813">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220315101306">
 	<title>Каталог</title>
 </head>
 
@@ -93,14 +93,14 @@
         <input type="number" class="sidebar__cost-input" placeholder="290 000">
       </div>
     </div>
-    <div id="range" class="range"></div>   
+    <div id="range" class="range"></div>
   </div>
   <div class="sidebar__category category">
     <div class="sidebar__category-title-wrapper category-title-wrapper">
       <div class="sidebar__category-title category-title">
         Название
       </div>
-     <button class="sidebar__category-btn category-btn"></button>
+      <button class="sidebar__category-btn category-btn"></button>
     </div>
     <ul class="sidebar__category-list">
       <li class="sidebar__category-item category-item">
@@ -144,7 +144,7 @@
       <div class="sidebar__type-title category-title">
         СИЛУЭТ
       </div>
-     <button class="sidebar__type-btn category-btn"></button>
+      <button class="sidebar__type-btn category-btn"></button>
     </div>
     <ul class="sidebar__type-list">
       <li class="sidebar__type-item category-item">
@@ -186,11 +186,11 @@
       <li class="sidebar__type-item category-item">
         <input type="checkbox" id="type10" class="custom-checkbox">
         <label for="type10">РУКАВ 3/4</label>
-      </li>   
+      </li>
       <li class="sidebar__type-item category-item">
         <input type="checkbox" id="type11" class="custom-checkbox">
         <label for="type11">РЫБКА</label>
-      </li>    
+      </li>
     </ul>
   </div>
 
@@ -199,7 +199,7 @@
       <div class="sidebar__style-title category-title">
         стиль
       </div>
-     <button class="sidebar__style-btn category-btn"></button>
+      <button class="sidebar__style-btn category-btn"></button>
     </div>
     <ul class="sidebar__style-list">
       <li class="sidebar__style-item category-item">
@@ -229,7 +229,7 @@
       <li class="sidebar__style-item category-item">
         <input type="checkbox" id="style7" class="custom-checkbox">
         <label for="style7">ФАТИНОВЫЕ</label>
-      </li>       
+      </li>
     </ul>
   </div>
 
@@ -238,7 +238,7 @@
       <div class="sidebar__color-title category-title">
         ЦВЕТ
       </div>
-     <button class="sidebar__color-btn category-btn"></button>
+      <button class="sidebar__color-btn category-btn"></button>
     </div>
     <ul class="sidebar__color-list">
       <li class="sidebar__color-item category-item">
@@ -268,34 +268,35 @@
       <li class="sidebar__color-item category-item">
         <input type="checkbox" id="color7" class="custom-checkbox">
         <label for="color7">КОРИЧНЕВЫЙ</label>
-      </li> 
+      </li>
       <li class="sidebar__color-item category-item">
         <input type="checkbox" id="color8" class="custom-checkbox">
         <label for="color8">КРЕМОВЫЕ</label>
-      </li>   
+      </li>
       <li class="sidebar__color-item category-item">
         <input type="checkbox" id="color9" class="custom-checkbox">
         <label for="color9">СЕРЕБРО</label>
-      </li>   
+      </li>
       <li class="sidebar__color-item category-item">
         <input type="checkbox" id="color10" class="custom-checkbox">
         <label for="color10">СЕРЫЙ</label>
-      </li>   
+      </li>
       <li class="sidebar__color-item category-item">
         <input type="checkbox" id="color11" class="custom-checkbox">
         <label for="color11">БЛЕСТКИ</label>
-      </li>   
+      </li>
       <li class="sidebar__color-item category-item">
         <input type="checkbox" id="color12" class="custom-checkbox">
         <label for="color12">СИНИЙ</label>
-      </li>   
+      </li>
       <li class="sidebar__color-item category-item">
         <input type="checkbox" id="color13" class="custom-checkbox">
         <label for="color13">ЧЕРНЫЙ</label>
-      </li>            
+      </li>
     </ul>
   </div>
 </div>
+
         <ul class="catalog__products">
           <li class="product__item">
   <a href="#">
@@ -583,8 +584,20 @@
 </div>
 	</div>
 
-	<script src="js/nouislider.min.js?_v=20220315080813"></script>
-	<script src="js/app.min.js?_v=20220315080813"></script>
+	<script src="js/nouislider.min.js?_v=20220315101306"></script>
+	<script src="js/app.min.js?_v=20220315101306"></script>
+	<script>
+		var range = document.getElementById('range');
+		noUiSlider.create(range, {
+			start: [20, 80],
+			connect: true,
+			range: {
+				'min': 0,
+				'max': 100
+			}
+		});
+		range.style.height = '4px';
+	</script>
 </body>
 
 </html>

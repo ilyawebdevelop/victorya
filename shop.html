@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 	<link rel="stylesheet" href="css/style.min.css?_v=20220315101306">
-	<title>Ваша заявка успешно отправлена</title>
+	<title>On-line shop</title>
 </head>
 
 <body>
@@ -51,25 +51,227 @@
 </header>
 	<div class="wrapper">
 		<main class="main">
-			<!-- Breadcrumps -->
-<section class="breadcrumps" id="breadcrumps">
-  <div class="container">
-    <div class="breadcrumps__wrapper">
-      <a href="#">Главная</a>
-      <a href="#">On-line shop</a>
+			<!-- Shop -->
+<section class="shop-menu" id="shop-menu">
+  <div class="container-1290">
+    <div class="shop-menu__wrapper">
+      <div class="shop-menu__left">
+        <div class="shop-menu__left-title">ЦЕНА</div>   
+        <div class="shop-menu__btn-wrapper">
+          <div class="input-wrapper">
+            <input type="number" class="shop-menu__input" placeholder="10000">
+          </div>
+          <div class="input-wrapper">
+            <input type="number" class="shop-menu__input" placeholder="290000">
+          </div>       
+        </div> 
+        <div id="range-shop" class="range-shop"></div>       
+      </div>
+      <div class="shop-menu__right">
+        
+        <div class="sidebar__category category">
+          <div class="sidebar__category-title-wrapper category-title-wrapper">
+            <div class="sidebar__category-title category-title">
+              Название
+            </div>           
+          </div>
+          <ul class="sidebar__category-list">
+            <li class="sidebar__category-item category-item">
+              <a href="#">все</a>
+            </li>
+            <li class="sidebar__category-item category-item">
+              <a href="#">ПЛАТЬЯ</a>
+            </li>
+            <li class="sidebar__category-item category-item">
+              <a href="#">БОХО-КИМОНО</a>
+            </li>
+            <li class="sidebar__category-item category-item">
+              <a href="#">БРЮКИ</a>
+            </li>
+            <li class="sidebar__category-item category-item">
+              <a href="#">БРЮЧНЫЙ КОСТЮМ</a>
+            </li>
+            <li class="sidebar__category-item category-item">
+              <a href="#">КОМБИНЕЗОН</a>
+            </li>
+            <li class="sidebar__category-item category-item">
+              <a href="#">НАКИДКИ</a>
+            </li>
+            <li class="sidebar__category-item category-item">
+              <a href="#">ПИДЖАКИ И КОФТЫ</a>
+            </li>
+            <li class="sidebar__category-item category-item">
+              <a href="#">ПОЯСА</a>
+            </li>
+            <li class="sidebar__category-item category-item">
+              <a href="#">ШЛЯПКИ</a>
+            </li>
+            <li class="sidebar__category-item category-item">
+              <a href="#">ЮБКИ</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar__type category">
+          <div class="sidebar__type-title-wrapper category-title-wrapper">
+            <div class="sidebar__type-title category-title">
+              СИЛУЭТ
+            </div>           
+          </div>
+          <ul class="sidebar__type-list">
+            <li class="sidebar__type-item category-item">
+              <input type="checkbox" id="type1" class="custom-checkbox">
+              <label for="type1">А-СИЛУЕТ</label>
+            </li>
+            <li class="sidebar__type-item category-item">
+              <input type="checkbox" id="type2" class="custom-checkbox">
+              <label for="type2">ВЕНЧАЛЬНЫЕ</label>
+            </li>
+            <li class="sidebar__type-item category-item">
+              <input type="checkbox" id="type3" class="custom-checkbox">
+              <label for="type3">ВЫШИВКА</label>
+            </li>
+            <li class="sidebar__type-item category-item">
+              <input type="checkbox" id="type4" class="custom-checkbox">
+              <label for="type4">ЗАКРЫТЫЕ</label>
+            </li>
+            <li class="sidebar__type-item category-item">
+              <input type="checkbox" id="type5" class="custom-checkbox">
+              <label for="type5">КОРСЕТНЫЕ</label>
+            </li>
+            <li class="sidebar__type-item category-item">
+              <input type="checkbox" id="type6" class="custom-checkbox">
+              <label for="type6">КРУЖЕВНЫЕ</label>
+            </li>
+            <li class="sidebar__type-item category-item">
+              <input type="checkbox" id="type7" class="custom-checkbox">
+              <label for="type7">ОТКРЫТЫЕ</label>
+            </li>
+            <li class="sidebar__type-item category-item">
+              <input type="checkbox" id="type8" class="custom-checkbox">
+              <label for="type8">ПРЯМЫЕ</label>
+            </li>
+            <li class="sidebar__type-item category-item">
+              <input type="checkbox" id="type9" class="custom-checkbox">
+              <label for="type9">ПЫШНЫЕ</label>
+            </li>
+            <li class="sidebar__type-item category-item">
+              <input type="checkbox" id="type10" class="custom-checkbox">
+              <label for="type10">РУКАВ 3/4</label>
+            </li>
+            <li class="sidebar__type-item category-item">
+              <input type="checkbox" id="type11" class="custom-checkbox">
+              <label for="type11">РЫБКА</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar__style category">
+          <div class="sidebar__style-title-wrapper category-title-wrapper">
+            <div class="sidebar__style-title category-title">
+              стиль
+            </div>           
+          </div>
+          <ul class="sidebar__style-list">
+            <li class="sidebar__style-item category-item">
+              <input type="checkbox" id="style1" class="custom-checkbox">
+              <label for="style1">ВИНТАЖНЫЙ</label>
+            </li>
+            <li class="sidebar__style-item category-item">
+              <input type="checkbox" id="style2" class="custom-checkbox">
+              <label for="style2">ГРЕЧЕСКИЕ</label>
+            </li>
+            <li class="sidebar__style-item category-item">
+              <input type="checkbox" id="style3" class="custom-checkbox">
+              <label for="style3">КЛАССИЧЕСКИЕ</label>
+            </li>
+            <li class="sidebar__style-item category-item">
+              <input type="checkbox" id="style4" class="custom-checkbox">
+              <label for="style4">С БАНТОМ</label>
+            </li>
+            <li class="sidebar__style-item category-item">
+              <input type="checkbox" id="style5" class="custom-checkbox">
+              <label for="style5">С ОТКРЫТОЙ СПИНОЙ</label>
+            </li>
+            <li class="sidebar__style-item category-item">
+              <input type="checkbox" id="style6" class="custom-checkbox">
+              <label for="style6">СОВРЕМЕННЫЙ</label>
+            </li>
+            <li class="sidebar__style-item category-item">
+              <input type="checkbox" id="style7" class="custom-checkbox">
+              <label for="style7">ФАТИНОВЫЕ</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar__color category">
+          <div class="sidebar__color-title-wrapper category-title-wrapper">
+            <div class="sidebar__color-title category-title">
+              ЦВЕТ
+            </div>            
+          </div>
+          <ul class="sidebar__color-list">
+            <li class="sidebar__color-item category-item">
+              <input type="checkbox" id="color1" class="custom-checkbox">
+              <label for="color1">АЙВОРИ</label>
+            </li>
+            <li class="sidebar__color-item category-item">
+              <input type="checkbox" id="color2" class="custom-checkbox">
+              <label for="color2">БЕЛЫЙ</label>
+            </li>
+            <li class="sidebar__color-item category-item">
+              <input type="checkbox" id="color3" class="custom-checkbox">
+              <label for="color3">ГОЛУБОЙ</label>
+            </li>
+            <li class="sidebar__color-item category-item">
+              <input type="checkbox" id="color4" class="custom-checkbox">
+              <label for="color4">ЖЕМЧУЖНЫЙ</label>
+            </li>
+            <li class="sidebar__color-item category-item">
+              <input type="checkbox" id="color5" class="custom-checkbox">
+              <label for="color5">ЗЕЛЕНЫЙ</label>
+            </li>
+            <li class="sidebar__color-item category-item">
+              <input type="checkbox" id="color6" class="custom-checkbox">
+              <label for="color6">ЗОЛОТО</label>
+            </li>
+            <li class="sidebar__color-item category-item">
+              <input type="checkbox" id="color7" class="custom-checkbox">
+              <label for="color7">КОРИЧНЕВЫЙ</label>
+            </li>
+            <li class="sidebar__color-item category-item">
+              <input type="checkbox" id="color8" class="custom-checkbox">
+              <label for="color8">КРЕМОВЫЕ</label>
+            </li>
+            <li class="sidebar__color-item category-item">
+              <input type="checkbox" id="color9" class="custom-checkbox">
+              <label for="color9">СЕРЕБРО</label>
+            </li>
+            <li class="sidebar__color-item category-item">
+              <input type="checkbox" id="color10" class="custom-checkbox">
+              <label for="color10">СЕРЫЙ</label>
+            </li>
+            <li class="sidebar__color-item category-item">
+              <input type="checkbox" id="color11" class="custom-checkbox">
+              <label for="color11">БЛЕСТКИ</label>
+            </li>
+            <li class="sidebar__color-item category-item">
+              <input type="checkbox" id="color12" class="custom-checkbox">
+              <label for="color12">СИНИЙ</label>
+            </li>
+            <li class="sidebar__color-item category-item">
+              <input type="checkbox" id="color13" class="custom-checkbox">
+              <label for="color13">ЧЕРНЫЙ</label>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <div class="shop-menu__btn">применить</div>
   </div>
 </section>
-			<section class="success" id="success">
-				<div class="container">
-					<h1 class="success__title">
-						ЗАКАЗ УСПЕШЕН!
-					</h1>
-					<div class="success__desc">Вашему заказу присвоен номер A-40129134736</div>
-					<div class="success__desc">Все детали отправлены на pochta@mail.ru</div>
-					<div class="success__btn card__order">продолжить покупки</div>
-				</div>
-			</section>
+
+	
 			
 		</main>
 		<!-- Footer -->
@@ -231,7 +433,22 @@
 </div>
 	</div>
 
+	<script src="js/nouislider.min.js?_v=20220315101306"></script>
 	<script src="js/app.min.js?_v=20220315101306"></script>
+	<script>
+		// Shop-menu-range
+		var range_shop = document.getElementById('range-shop');
+		noUiSlider.create(range_shop, {
+			start: [20, 80],
+			connect: true,
+			range: {
+					'min': 0,
+					'max': 100
+			}
+		});
+		
+		
+		</script>
 </body>
 
 </html>

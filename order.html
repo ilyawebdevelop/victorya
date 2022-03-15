@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<link rel="stylesheet" href="css/style.min.css?_v=20220315080813">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220315101306">
 	<title>Мой заказ</title>
 </head>
 
@@ -184,14 +184,14 @@
     <div class="delivery__input form-input"> 
       <div class="checkbox-wrapper">        
         <input type="checkbox" class="custom-checkbox" id="delivery-cb1"checked>   
-        <label for="delivery-cb1"></label>
+        <label for="delivery-cb1" class="checkbox-label"></label>
       </div>      
       <div class="delivery__button curier">КУРЬЕРСКАЯ ДОСТАВКА</div>
     </div>
     <div class="delivery__input form-input"> 
       <div class="checkbox-wrapper">        
         <input type="checkbox" class="custom-checkbox" id="delivery-cb2">   
-        <label for="delivery-cb2"></label>
+        <label for="delivery-cb2" class="checkbox-label"></label>
       </div>      
       <div class="delivery__button myself">САМОВЫВОЗ</div>
     </div>
@@ -328,7 +328,7 @@
   </div>
   <div class="personal__agreement">
     <input type="checkbox" id="agreement" class="custom-checkbox">
-    <label for="agreement">Согласие с политикой компании </label>
+    <label for="agreement" class="checkbox-label">Согласие с политикой компании </label>
   </div>
   <div class="politics">
     <div class="politics__title">
@@ -452,7 +452,136 @@
 </div>
           </div>
         </div>
-        <div class="tabs__panel">4</div>
+        <div class="tabs__panel payment-tab">
+          <div class="tabs__panel-wrapper">
+            <!-- payment -->
+<form class="payment form-order">
+  <div class="payment__title form-title">Оплата</div> 
+  <div class="payment__input-wrapper form-input-wrapper">
+    <div class="payment__input form-input"> 
+      <div class="checkbox-wrapper">        
+        <input type="checkbox" class="custom-checkbox" id="payment-cb1"checked>   
+        <label for="payment-cb1" class="checkbox-label"></label>
+      </div>      
+      <div class="payment__button card">Банковская карта</div>
+    </div>
+    <div class="payment__input form-input"> 
+      <div class="checkbox-wrapper">        
+        <input type="checkbox" class="custom-checkbox" id="payment-cb2">   
+        <label for="payment-cb2" class="checkbox-label"></label>
+      </div>      
+      <div class="payment__button paypal">PayPal</div>
+    </div>
+  </div>
+
+  <div class="personal-card__input-wrapper form-input-wrapper">
+    <div class="personal-card__input form-input">
+      <label for="form-personal-card">Номер карты</label>
+      <input type="number" id="form-personal-card" maxlength="16">
+    </div>
+    <div class="payment__input form-input">
+      <label for="form-name-card">Имя держателя карты</label>
+      <input type="email" id="form-name-card">
+    </div>
+  </div>
+
+  <div class="personal-card__input-wrapper form-input-wrapper">
+    <div class="personal-card__input form-input">
+      <label for="form-date-card">Окончание действие карты</label>
+      <input type="date" id="form-date-card">
+    </div>
+    <div class="payment__input form-input cvc">
+      <label for="form-pass-card">CVC</label>
+      <input type="password" id="form-pass-card" maxlength="3">
+    </div>
+  </div>
+
+  <div class="payment__btns">
+    <button class="delivery__btn-back form-input-btn">Вернуться назад</button>
+    <button class="delivery__btn form-input-btn">ДАЛЕЕ</button>
+  </div>  
+</form>
+            <!-- total -->
+<div class="total">
+  <ul class="total__products">
+    <li class="total__product">
+      <div class="total__product-left">
+        <picture><source srcset="img/total/total-img1.webp" type="image/webp"><img src="img/total/total-img1.jpg" alt="product-image"></picture>
+        <div class="total__product-wrapper">
+          <div class="total__product-title">
+            ЮБКА
+          </div>
+          <div class="total__product-type">Коллекция: <span>Almina lua</span></div>
+          <div class="total__product-type">Цвет: <span>ЧЁРНЫЙ</span></div>
+          <div class="total__product-type">Размер: <span>42</span></div>
+          <div class="total__product-type">Количество: <span>1</span></div>
+          <div class="total__product-price">51 000 ₽</div>
+        </div>
+      </div>
+      <div class="total__product-right">
+        <button class="total__product-btn-close">
+          <img src="img/total/close-img.svg" alt="close-img">
+        </button>
+      </div>
+    </li>
+    <li class="total__product">
+      <div class="total__product-left">
+        <picture><source srcset="img/total/total-img1.webp" type="image/webp"><img src="img/total/total-img1.jpg" alt="product-image"></picture>
+        <div class="total__product-wrapper">
+          <div class="total__product-title">
+            ЮБКА
+          </div>
+          <div class="total__product-type">Коллекция: <span>Almina lua</span></div>
+          <div class="total__product-type">Цвет: <span>ЧЁРНЫЙ</span></div>
+          <div class="total__product-type">Размер: <span>42</span></div>
+          <div class="total__product-type">Количество: <span>1</span></div>
+          <div class="total__product-price">51 000 ₽</div>
+        </div>
+      </div>
+      <div class="total__product-right">
+        <button class="total__product-btn-close">
+          <img src="img/total/close-img.svg" alt="close-img">
+        </button>
+      </div>
+    </li>
+    <li class="total__product">
+      <div class="total__product-left">
+        <picture><source srcset="img/total/total-img1.webp" type="image/webp"><img src="img/total/total-img1.jpg" alt="product-image"></picture>
+        <div class="total__product-wrapper">
+          <div class="total__product-title">
+            ЮБКА
+          </div>
+          <div class="total__product-type">Коллекция: <span>Almina lua</span></div>
+          <div class="total__product-type">Цвет: <span>ЧЁРНЫЙ</span></div>
+          <div class="total__product-type">Размер: <span>42</span></div>
+          <div class="total__product-type">Количество: <span>1</span></div>
+          <div class="total__product-price">51 000 ₽</div>
+        </div>
+      </div>
+      <div class="total__product-right">
+        <button class="total__product-btn-close">
+          <img src="img/total/close-img.svg" alt="close-img">
+        </button>
+      </div>
+    </li>
+  </ul>
+  <div class="total__price">
+    <div class="total__price-name">
+      <div class="total__price-name-lg">Итог:</div>
+      <div class="total__price-name-lg">151 000 ₽</div>
+    </div>
+    <div class="total__price-products">
+      <div class="total__price-products-md">Товары, 3 шт</div>
+      <div class="total__price-products-md">151 000 ₽</div>
+    </div>
+    <a class="total__price-personal" href="#">
+      Отправляя заказ Вы даете нам разрешение на
+      обработку персональных данных
+    </a>
+  </div>
+</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -618,7 +747,7 @@
 </div>
 	</div>
 
-	<script src="js/app.min.js?_v=20220315080813"></script>
+	<script src="js/app.min.js?_v=20220315101306"></script>
 </body>
 
 </html>
