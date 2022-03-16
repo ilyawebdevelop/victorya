@@ -2291,15 +2291,14 @@ h3 {
 
 .intro__btn {
   position: absolute;
-  left: 50%;
   background-color: #fff;
   top: 50%;
+  right: 0;
+  left: 0;
+  margin: auto;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
   z-index: 1;
 }
 
@@ -2330,6 +2329,26 @@ h3 {
           transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
+.swiper-button-next {
+  display: none;
+  right: 20px;
+  background: url("../img/intro/next-btn.svg") no-repeat center center/50%;
+}
+
+.swiper-button-next::after {
+  content: "";
+}
+
+.swiper-button-prev {
+  display: none;
+  left: 20px;
+  background: url("../img/intro/prev-btn.svg") no-repeat center center/50%;
+}
+
+.swiper-button-prev::after {
+  content: "";
+}
+
 .product__list {
   display: -ms-grid;
   display: grid;
@@ -2341,7 +2360,7 @@ h3 {
 .product__item {
   -ms-grid-column-span: 3;
   grid-column: 3 span;
-  min-height: 600px;
+  max-height: 600px;
   position: relative;
   -webkit-transition: -webkit-box-shadow 0.2s linear;
   transition: -webkit-box-shadow 0.2s linear;
@@ -2450,6 +2469,10 @@ h3 {
           align-items: flex-end;
 }
 
+.wedding-dress__right .wedding-dress__btn {
+  display: none;
+}
+
 .wedding-dress__title {
   margin-bottom: 28px;
   max-width: 230px;
@@ -2472,6 +2495,10 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.evening-dress__left .evening-dress__btn {
+  display: none;
 }
 
 .evening-dress__right {
@@ -2657,10 +2684,13 @@ h3 {
 .accessories__offer {
   position: absolute;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-      -ms-transform: translate(-50%);
-          transform: translate(-50%);
+  left: 0;
+  margin: auto;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  text-align: center;
   z-index: 1;
 }
 
@@ -2692,6 +2722,14 @@ h3 {
   -ms-grid-columns: (1fr)[15];
   grid-template-columns: repeat(15, 1fr);
   gap: 0 30px;
+}
+
+.accessories__item-top {
+  display: none;
+}
+
+.accessories__item-bottom {
+  display: none;
 }
 
 .history {
@@ -4335,6 +4373,14 @@ h3 {
 }
 
 @media (max-width: 1500px) {
+  .history__baner {
+    padding: 50px;
+  }
+
+  .history__offer {
+    padding-right: 20px;
+  }
+
   .footer__top {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -4359,6 +4405,10 @@ h3 {
   .product__item {
     min-height: 400px;
     height: 100%;
+  }
+
+  .accessories__item-title {
+    bottom: 40px;
   }
 
   .card__wrapper {
@@ -4434,6 +4484,108 @@ h3 {
   .product__item {
     -ms-grid-column-span: 4;
     grid-column: 4 span;
+  }
+
+  .wedding-dress__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .wedding-dress__left .wedding-dress__btn {
+    display: none;
+  }
+
+  .wedding-dress__left {
+    text-align: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .wedding-dress__right .wedding-dress__btn {
+    display: block;
+  }
+
+  .wedding-dress__btn {
+    margin-top: 30px;
+  }
+
+  .evening-dress__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .evening-dress__left .evening-dress__btn {
+    display: block;
+  }
+
+  .evening-dress__left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .evening-dress__right .evening-dress__btn {
+    display: none;
+  }
+
+  .evening-dress__right {
+    margin-left: 0;
+  }
+
+  .evening-dress__btn {
+    margin-top: 30px;
+  }
+
+  .models__title {
+    font-size: 37px;
+  }
+
+  .models__products {
+    -ms-grid-columns: (1fr)[12];
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+  }
+
+  .outfits__item {
+    -ms-grid-column-span: 4;
+    grid-column: 4 span;
+  }
+
+  .outfits__item:last-child {
+    display: none;
+  }
+
+  .outfits__title {
+    font-size: 37px;
+  }
+
+  .accessories__item-title {
+    font-size: 31px;
+  }
+
+  .accessories__title {
+    font-size: 37px;
+  }
+
+  .accessories__title {
+    font-size: 26px;
+  }
+
+  .history__wrapper {
+    min-height: auto;
+  }
+
+  .history__baner {
+    padding: 30px;
+  }
+
+  .history__offer {
+    padding: 20px 20px 25px 40px;
   }
 
   .contacts__wrapper {
@@ -4539,9 +4691,80 @@ h3 {
 }
 
 @media (max-width: 991px) {
+  .product__list {
+    gap: 25px 20px;
+  }
+
   .product__item {
     -ms-grid-column-span: 6;
     grid-column: 6 span;
+  }
+
+  .wedding-dress__btn {
+    margin-top: 30px;
+    margin: 30px auto 0;
+  }
+
+  .wedding-dress {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .evening-dress__btn {
+    margin-top: 30px;
+    margin: 30px auto 0;
+  }
+
+  .evening-dress {
+    padding-bottom: 70px;
+  }
+
+  .models__title {
+    font-size: 26px;
+  }
+
+  .models__products {
+    gap: 20px;
+    padding-bottom: 70px;
+  }
+
+  .outfits__title {
+    font-size: 26px;
+  }
+
+  .outfits {
+    padding-bottom: 80px;
+  }
+
+  .outfits {
+    padding-bottom: 50px;
+  }
+
+  .accessories__item-title {
+    font-size: 23px;
+  }
+
+  .history__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .history__baner {
+    width: 100%;
+  }
+
+  .history__offer {
+    width: 100%;
+  }
+
+  .history__text {
+    max-width: 100%;
+  }
+
+  .history {
+    padding-bottom: 80px;
   }
 
   .slider {
@@ -4602,6 +4825,10 @@ h3 {
 }
 
 @media (max-width: 768px) {
+  .accessories__title {
+    font-size: 16px;
+  }
+
   .concept__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4622,6 +4849,18 @@ h3 {
     line-height: 30px;
   }
 
+  .btn_collection {
+    width: 240px;
+    font-size: 11px;
+    padding: 12px;
+  }
+
+  .btn_view-all {
+    width: 240px;
+    font-size: 11px;
+    padding: 11px;
+  }
+
   .card__order {
     width: 240px;
     font-size: 11px;
@@ -4640,6 +4879,116 @@ h3 {
 
   .breadcrumps {
     padding: 9px 0;
+  }
+
+  .intro__title {
+    bottom: 40px;
+  }
+
+  .intro__btn {
+    width: 200px;
+    font-size: 11px;
+    padding: 12px;
+  }
+
+  .swiper-button-next {
+    display: block;
+  }
+
+  .swiper-button-prev {
+    display: block;
+  }
+
+  .product__item-title {
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+
+  .product__item-text {
+    font-size: 9px;
+    margin-bottom: 5px;
+  }
+
+  .product__item-offer {
+    margin-top: 8px;
+  }
+
+  .old-price {
+    font-size: 11px;
+  }
+
+  .now-price {
+    font-size: 11px;
+  }
+
+  .wedding-dress__text {
+    font-size: 11px;
+    margin-bottom: 17px;
+  }
+
+  .wedding-dress {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .evening-dress__text {
+    font-size: 11px;
+    margin-bottom: 17px;
+  }
+
+  .evening-dress {
+    padding-bottom: 45px;
+  }
+
+  .models__title {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .models__products {
+    padding-bottom: 40px;
+  }
+
+  .outfits__icon {
+    background: url("../img/outfits/photo-img.svg") no-repeat center center/25%;
+  }
+
+  .outfits__title {
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left: 0;
+    margin: auto;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  .accessories__item-title {
+    font-size: 16px;
+    bottom: 34px;
+  }
+
+  .accessories__btn {
+    margin-top: 14px;
+  }
+
+  .accessories {
+    padding-bottom: 50px;
+  }
+
+  .history__title {
+    font-size: 16px;
+  }
+
+  .history__text {
+    font-size: 11px;
+  }
+
+  .history {
+    padding-bottom: 50px;
   }
 
   .catalog__sort-left a {
@@ -4963,6 +5312,94 @@ h3 {
 
   .header__logo {
     width: 150px;
+  }
+
+  .product__item-sale-name {
+    font-size: 9px;
+  }
+
+  .product__item-sale-bg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .product__item-sale {
+    width: 30px;
+    height: 30px;
+  }
+
+  .product__item {
+    min-height: auto;
+  }
+
+  .models__item:nth-child(1) {
+    display: none;
+  }
+
+  .models__item:nth-child(3) {
+    display: none;
+  }
+
+  .models__item {
+    -ms-grid-column-span: 12;
+    grid-column: 12 span;
+  }
+
+  .models__offer {
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  .models__btn {
+    margin-top: 15px;
+  }
+
+  .outfits__item:nth-child(2) {
+    display: none;
+  }
+
+  .outfits__item:nth-child(3) {
+    display: none;
+  }
+
+  .outfits__item {
+    -ms-grid-column-span: 12;
+    grid-column: 12 span;
+  }
+
+  .accessories__item:nth-child(1) {
+    display: none;
+  }
+
+  .accessories__item:nth-child(3) {
+    display: none;
+  }
+
+  .accessories__item-title {
+    bottom: 55px;
+  }
+
+  .accessories__item {
+    -ms-grid-column-span: 12;
+    grid-column: 12 span;
+  }
+
+  .accessories__item-top {
+    display: block;
+    bottom: 80px;
+  }
+
+  .accessories__item-bottom {
+    display: block;
+    bottom: 30px;
+  }
+
+  .history__offer {
+    padding: 23px 20px 20px;
   }
 
   .card__desc {
